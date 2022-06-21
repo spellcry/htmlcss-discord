@@ -168,6 +168,10 @@ body {
     padding-right: 72.5px;
 }
 
+.section .row--reverse .col-6 {
+    text-align: right;
+}
+
 .section__title {
     font-size: 40px;
     margin-bottom: 30px;
