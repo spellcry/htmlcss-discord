@@ -329,8 +329,8 @@ body {
     padding-top: 26px;
 }
 
-.footer__bottom .row {
-    justify-content: space-between;
+.footer__bottom .cta {
+    margin-left: auto;
 }
 
 /* Footer debug */
