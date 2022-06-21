@@ -39,6 +39,10 @@ body {
     background-color: #255EE9;
 }
 
+.main-header__logo {
+    max-width: 124px;
+}
+
 .main-header .container {
     align-items: center;
 }
@@ -90,7 +94,7 @@ body {
 
 .hero .container {
     max-width: 910px;
-    padding-block: 40px;
+    padding-block: 50px;
     justify-content: center;
 }
 
@@ -109,16 +113,17 @@ body {
 
 .hero__cta--download,
 .hero__cta--open {
+    display: inline-flex;
     font-size: 18px;
 }
 
 .hero__cta--download {
-    display: inline-flex;
     align-items: flex-start;
     margin-right: 15px;
 }
 
-.hero__cta--download::before {
+.hero__cta--download::before,
+.section-100__cta::before {
     content: "\2193";
     display: inline-block;
     margin-right: 5px;
@@ -140,21 +145,38 @@ body {
     background-color: #F2C7F2;
 }
 
-/* Card 60% 40% */
-.card {
-    padding-block: 50px;
+/* Section 60% 40% */
+.section {
+    padding-block: 80px;
 }
 
-.card .col-6 {
+.section .col-6 {
     flex-basis: 60%;
 }
 
-.card .col-4 {
+.section .col-4 {
     flex-basis: 40%;
+    padding-top: 40px;
+    padding-left: 72.5px;
+    padding-right: 40px;
 }
 
-/* Card 60% 40% debug */
-.debug .card .row {
+.section .row--reverse .col-4 {
+    padding-left: 40px;
+    padding-right: 72.5px;
+}
+
+.section__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section__text {
+    line-height: 1.8;
+}
+
+/* Section 60% 40% debug */
+.debug .section .row {
     height: 500px;
 }
 
@@ -170,17 +192,36 @@ body {
     background-color: #E7E7E7;
 }
 
-/* Card 100% */
-.card-100 {
+/* Section 100% */
+.section-100 {
     padding-block: 50px;
 }
 
-.card-100 .col {
+.section-100 .col {
     flex-basis: 100%;
+    text-align: center;
 }
 
-/* Card 100% debug */
-.debug .card-100 .container .col {
+.section-100 .section__text {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.section-100 img {
+    width: 85%;
+}
+
+.section-100__cta {
+    background-color: #7289DA;
+    color: #fff;
+}
+
+.section-100__cta-wrapper__title {
+    margin-bottom: 50px;
+}
+
+/* Section 100% debug */
+.debug .section-100 .container .col {
     height: 900px;
     background-color: #A1CBA1;
 }
