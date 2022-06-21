@@ -39,7 +39,8 @@ body {
     background-color: #255EE9;
 }
 
-.main-header__logo {
+.main-header__logo,
+.footer__botto__logo {
     max-width: 124px;
 }
 
@@ -47,7 +48,8 @@ body {
     align-items: center;
 }
 
-.main-header__cta {
+.main-header__cta,
+.footer__bottom__cta {
     font-size: 14px;
 }
 
@@ -194,7 +196,8 @@ body {
 
 /* Section 100% */
 .section-100 {
-    padding-block: 50px;
+    padding-top: 50px;
+    margin-bottom: 150px;
 }
 
 .section-100 .col {
@@ -211,7 +214,8 @@ body {
     width: 85%;
 }
 
-.section-100__cta {
+.section-100__cta,
+.footer__bottom__cta {
     background-color: #7289DA;
     color: #fff;
 }
@@ -227,9 +231,16 @@ body {
 }
 
 /* Footer */
-.footer__top {
-    padding-block: 10px 40px;
-    margin-bottom: 2px;
+.footer {
+    padding-block: 60px;
+    background-color: #23272A;
+    color: #fff;
+}
+
+/* Footer top */
+.footer__top .container {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #7289DA;
 }
 
 .footer__top .col-4 {
@@ -240,6 +251,76 @@ body {
     flex-basis: calc(calc(100% / 12) *2);
 }
 
+.footer__top__title {
+    font-size: 26px;
+    color: #7289DA;
+    margin-bottom: 15px;
+}
+
+.footer__top__lang {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.footer__top__lang::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    margin-right: 5px;
+    background: url(../img/ita.png) center center;
+    background-size: 100%;
+}
+
+.footer__top__lang::after {
+    content: "\25be";
+    display: inline-block;
+    height: 18px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.footer__top__social {
+    list-style-type: none;
+}
+
+.footer__top__social__item {
+    margin-inline: 10px;
+}
+
+.footer__top__social__item:nth-child(1) {
+    margin-left: 0;
+}
+
+.footer__top__social__item:nth-child(4) {
+    margin-right: 0;
+}
+
+.footer__top__menu__title {
+    margin-bottom: 20px;
+    color: #7289DA;
+}
+
+.footer__top__menu {
+    list-style-type: none;
+}
+
+.footer__top__menu__item {
+    margin-bottom: 20px;
+}
+
+.footer__top__menu__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__top__menu__item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer bottom */
 .footer__bottom {
     padding-top: 26px;
 }
@@ -264,10 +345,6 @@ body {
 
 .debug .footer {
     background-color: #A1A3A4;
-}
-
-.footer__top {
-    border-bottom: 2px solid #fff;
 }
 
 .debug .footer__top .container {
