@@ -229,7 +229,9 @@ body {
 }
 
 .section-100__cta-wrapper__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    background: url(../img/stars.svg) no-repeat center;
+    padding: 20px;
 }
 
 /* Section 100% debug */
