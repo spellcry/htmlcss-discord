@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Regole layout */
 body {
     font-family: "Whitney", "Helvetica", sans-serif;
